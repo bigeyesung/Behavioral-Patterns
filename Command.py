@@ -35,4 +35,5 @@ class Receiver:
         print(f"\nReceiver: Also working on ({b}.)", end="")
 
 class Invoker:
-
+    _on_start = None
+    _on_finish = None
