@@ -16,3 +16,8 @@ class SimpleCommand(Command):
               f"({self._payload})")
 
 class ComplexCommand(Command):
+
+    def __init__(self, receiver: Receiver, a: str, b: str) -> None:
+        self._receiver = receiver
+        self._a = a
+        self._b = b
