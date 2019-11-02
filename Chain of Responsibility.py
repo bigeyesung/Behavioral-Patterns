@@ -10,3 +10,5 @@ class Handler(ABC):
     @abstractmethod
     def handle(self, request) -> Optional[str]:
         pass
+
+class AbstractHandler(Handler):
