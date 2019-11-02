@@ -12,3 +12,4 @@ class Handler(ABC):
         pass
 
 class AbstractHandler(Handler):
+    _next_handler: Handler = None
