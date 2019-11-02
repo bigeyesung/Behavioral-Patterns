@@ -43,3 +43,5 @@ class Invoker:
 
     def set_on_finish(self, command: Command):
         self._on_finish = command
+
+    def do_something_important(self) -> None:
