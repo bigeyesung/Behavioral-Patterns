@@ -67,3 +67,6 @@ if __name__ == "__main__":
     print("Chain: Monkey > Squirrel > Dog")
     client_code(monkey)
     print("\n")
+
+    print("Subchain: Squirrel > Dog")
+    client_code(squirrel)
