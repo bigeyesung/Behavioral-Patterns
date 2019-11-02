@@ -54,3 +54,5 @@ class Invoker:
         print("Invoker: Does anybody want something done after I finish?")
         if isinstance(self._on_finish, Command):
             self._on_finish.execute()
+
+if __name__ == "__main__":
