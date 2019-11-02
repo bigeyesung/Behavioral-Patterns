@@ -48,3 +48,5 @@ class Invoker:
         print("Invoker: Does anybody want something done before I begin?")
         if isinstance(self._on_start, Command):
             self._on_start.execute()
+            
+        print("Invoker: ...doing something really important...")
