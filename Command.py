@@ -21,3 +21,5 @@ class ComplexCommand(Command):
         self._receiver = receiver
         self._a = a
         self._b = b
+
+    def execute(self) -> None:
