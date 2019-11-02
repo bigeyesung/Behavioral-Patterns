@@ -55,3 +55,5 @@ def client_code(handler: Handler) -> None:
                 print(f"  {result}", end="")
             else:
                 print(f"  {food} was left untouched.", end="")
+
+if __name__ == "__main__":
