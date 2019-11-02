@@ -24,3 +24,5 @@ class AbstractHandler(Handler):
             return self._next_handler.handle(request)
 
         return None
+
+class MonkeyHandler(AbstractHandler):
