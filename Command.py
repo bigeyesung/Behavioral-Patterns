@@ -23,7 +23,7 @@ class ComplexCommand(Command):
         self._b = b
 
     def execute(self):
-        print("ComplexCommand: Complex stuff should be done by a receiver object", end="")
+        print("test")
         self._receiver.do_something(self._a)
         self._receiver.do_something_else(self._b)
 
