@@ -32,7 +32,7 @@ class Receiver:
         print("do sth")
 
     def do_something_else(self, b: str):
-        print(f"\nReceiver: Also working on ({b}.)", end="")
+        print("do sth else")
 
 class Invoker:
     _on_start = None
