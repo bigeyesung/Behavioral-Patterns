@@ -28,10 +28,10 @@ class ComplexCommand(Command):
         self._receiver.do_something_else(self._b)
 
 class Receiver:
-    def do_something(self, a: str) -> None:
+    def do_something(self, a: str):
         print(f"\nReceiver: Working on ({a}.)", end="")
 
-    def do_something_else(self, b: str) -> None:
+    def do_something_else(self, b: str):
         print(f"\nReceiver: Also working on ({b}.)", end="")
 
 class Invoker:
