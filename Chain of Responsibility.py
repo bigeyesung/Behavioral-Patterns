@@ -19,14 +19,14 @@ class AbstractHandler(Handler):
         return handler
 
     @abstractmethod
-    def handle(self, request: Any) -> str:
+    def handle(self, request: Any):
         if self._next_handler:
             return self._next_handler.handle(request)
 
         return None
 
 class MonkeyHandler(AbstractHandler):
-    def handle(self, request: Any) -> str:
+    def handle(self, request: Any):
         if request == "Banana":
             return f"Monkey: I'll eat the {request}"
         else:
