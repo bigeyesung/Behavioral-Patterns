@@ -31,3 +31,8 @@ class MonkeyHandler(AbstractHandler):
             return f"Monkey: I'll eat the {request}"
         else:
             return super().handle(request)
+
+class SquirrelHandler(AbstractHandler):
+    def handle(self, request: Any) -> str:
+        if request == "Nut":
+            return f"Squirrel: I'll eat the {request}"
