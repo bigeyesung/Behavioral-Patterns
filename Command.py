@@ -37,3 +37,6 @@ class Receiver:
 class Invoker:
     _on_start = None
     _on_finish = None
+
+    def set_on_start(self, command: Command):
+        self._on_start = command
