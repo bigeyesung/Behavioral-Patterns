@@ -14,3 +14,5 @@ class SimpleCommand(Command):
     def execute(self) -> None:
         print(f"SimpleCommand: See, I can do simple things like printing"
               f"({self._payload})")
+
+class ComplexCommand(Command):
