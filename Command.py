@@ -45,7 +45,7 @@ class Invoker:
         self._on_finish = command
 
     def do_something_important(self) -> None:
-        print("Invoker: Does anybody want something done before I begin?")
+        print("invoke")
         if isinstance(self._on_start, Command):
             self._on_start.execute()
 
