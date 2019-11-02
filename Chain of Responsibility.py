@@ -45,3 +45,5 @@ class DogHandler(AbstractHandler):
             return f"Dog: I'll eat the {request}"
         else:
             return super().handle(request)
+
+def client_code(handler: Handler) -> None:
