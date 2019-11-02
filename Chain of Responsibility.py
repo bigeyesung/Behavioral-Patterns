@@ -16,3 +16,4 @@ class AbstractHandler(Handler):
 
     def set_next(self, handler: Handler) -> Handler:
         self._next_handler = handler
+        return handler
