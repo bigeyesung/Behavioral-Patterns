@@ -40,3 +40,6 @@ class Invoker:
 
     def set_on_start(self, command: Command):
         self._on_start = command
+
+    def set_on_finish(self, command: Command):
+        self._on_finish = command
