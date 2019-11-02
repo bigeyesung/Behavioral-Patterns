@@ -57,3 +57,13 @@ def client_code(handler: Handler) -> None:
                 print(f"  {food} was left untouched.", end="")
 
 if __name__ == "__main__":
+
+    monkey = MonkeyHandler()
+    squirrel = SquirrelHandler()
+    dog = DogHandler()
+
+    monkey.set_next(squirrel).set_next(dog)
+
+    print("Chain: Monkey > Squirrel > Dog")
+    client_code(monkey)
+    print("\n")
