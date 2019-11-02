@@ -64,9 +64,9 @@ if __name__ == "__main__":
 
     monkey.set_next(squirrel).set_next(dog)
 
-    print("Chain: Monkey > Squirrel > Dog")
+    print("test1")
     client_code(monkey)
     print("\n")
 
-    print("Subchain: Squirrel > Dog")
+    print("test2")
     client_code(squirrel)
