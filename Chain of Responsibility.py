@@ -26,3 +26,6 @@ class AbstractHandler(Handler):
         return None
 
 class MonkeyHandler(AbstractHandler):
+    def handle(self, request: Any) -> str:
+        if request == "Banana":
+            return f"Monkey: I'll eat the {request}"
