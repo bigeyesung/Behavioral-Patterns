@@ -58,7 +58,7 @@ class Invoker:
 if __name__ == "__main__":
 
     invoker = Invoker()
-    invoker.set_on_start(SimpleCommand("Say Hi!"))
+    invoker.set_on_start(SimpleCommand("testtest"))
     receiver = Receiver()
     invoker.set_on_finish(ComplexCommand(
     receiver, "Send email", "Save report"))
