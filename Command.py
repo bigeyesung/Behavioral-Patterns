@@ -3,15 +3,15 @@ from abc import ABC, abstractmethod
 class Command(ABC):
 
     @abstractmethod
-    def execute(self) -> None:
+    def execute(self):
         pass
 
 class SimpleCommand(Command):
 
-    def __init__(self, payload: str) -> None:
+    def __init__(self, payload: str):
         self._payload = payload
 
-    def execute(self) -> None:
+    def execute(self):
         print(f"SimpleCommand: See, I can do simple things like printing"
               f"({self._payload})")
 
