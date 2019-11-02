@@ -56,3 +56,7 @@ class Invoker:
             self._on_finish.execute()
 
 if __name__ == "__main__":
+
+    invoker = Invoker()
+    invoker.set_on_start(SimpleCommand("Say Hi!"))
+    receiver = Receiver()
