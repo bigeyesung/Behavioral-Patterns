@@ -53,3 +53,5 @@ def client_code(handler: Handler) -> None:
             result = handler.handle(food)
             if result:
                 print(f"  {result}", end="")
+            else:
+                print(f"  {food} was left untouched.", end="")
