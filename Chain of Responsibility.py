@@ -47,3 +47,9 @@ class DogHandler(AbstractHandler):
             return super().handle(request)
 
 def client_code(handler: Handler) -> None:
+
+    for food in ["Nut", "Banana", "Cup of coffee"]:
+            print(f"\nClient: Who wants a {food}?")
+            result = handler.handle(food)
+            if result:
+                print(f"  {result}", end="")
