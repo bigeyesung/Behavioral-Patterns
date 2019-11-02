@@ -13,3 +13,6 @@ class Handler(ABC):
 
 class AbstractHandler(Handler):
     _next_handler: Handler = None
+
+    def set_next(self, handler: Handler) -> Handler:
+        self._next_handler = handler
