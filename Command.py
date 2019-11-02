@@ -29,7 +29,7 @@ class ComplexCommand(Command):
 
 class Receiver:
     def do_something(self, a: str):
-        print(f"\nReceiver: Working on ({a}.)", end="")
+        print("do sth")
 
     def do_something_else(self, b: str):
         print(f"\nReceiver: Also working on ({b}.)", end="")
